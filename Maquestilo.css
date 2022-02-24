@@ -4,72 +4,87 @@
     
 }
 body{
-    background: #444;
+    background: rgb(240, 235, 237);
     /* color: blanchedalmond; */
-    font-size: 80%;
 }
 #Contenedor{
-    width: 1300px;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    background: rgb(227, 227, 233);
+    
     
     overflow: hidden;
     /* background: blue; */
 }
 header{
     height: 150px;
+    width: 100%;
     /* background: blueviolet; */
-    background-image: url(banner.png);
+    background-image: url(banner2.jpg);
    
     border-radius: 20px;
 }
 header h1{
-    font-size: 1.4em;
+    font-size: 20px;
     text-align: center;
     /* line-height: 150px;   */
     /* margin-left: 200px;  */
 }
 header h2{
-    font-size: 1.4em;
-    text-align: justify;
+    font-size: 10px;
+    text-align: center;
     font-family: cursive;
 }
 nav{
     height: 60px;
+    width: 100%;
     background: cyan;
 }
 nav h2{
-    font-size: 1.4em;
+    font-size: 30px;
     text-align: center;
     line-height: 60px;
 }
 #Contenido{
-    width: 900px;
-    height: 600px;
+    width: 70%;
+    padding: 20px;
+    
+    /* height: 600px; */
     float: left;
     background: lightsalmon;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    box-sizing: border-box;
+    /* margin-top: 10px;
+    /* margin-right: 10px; */
+    /* margin-bottom: 5px;  */
 }
 #Contenido h3{
-    font-size: 1.4em;
+    font-size: 50px;
     text-align: center;
     /* line-height: 600px; */
-    color: rgb(255, 94, 0);
+    color: lime;
 
 }
+#Contenido img{
+    width: 100%;
+    height: auto;
+}
 aside{
-    width: 390px;
-    height: 600px;
-    background: magenta;
-    margin-top: 10px;
-    float: right;
+    width: 30%;
+    /* padding: 20px; */
+    /* height: 600px; */
+    background: rgb(241, 239, 241);
+    height: auto;
+    /* margin-top: 10px; */
+    float: left;
+    box-sizing: border-box;
 }
 aside h4{
-    font-size: 1.4em;
+    font-size: 20px;
     text-align:center;
+    color: rgb(5, 5, 20);
     /* line-height: 600px; */
 
 }
@@ -78,14 +93,15 @@ footer{
     clear: both;
 }
 footer h5{
-font-size: 1.1em;
+font-size: 20px;
 text-align: center;
 padding: 20px; /*despues comentar*/
 }
 
 p {
-    text-align: justify;
-    color: rgb(50, 20, 220);
+    text-align: center;
+    color: rgb(9, 8, 15);
+    font-family: monospace;
 } 
 header img{
     height: 150px; 
@@ -96,12 +112,12 @@ header img{
 
 
 a{
-    font-size: 0.9em;
+    font-size: 20px;
     /* text-decoration: none; */
-    margin: 20px 120px;
+    margin: 10px 60px;
     margin-top: 40px;
     color: tomato;
-    font-size: 0.9em;
+    font-size: 15px;
     font-family: fantasy;
     /* display: inline-block;
     background: #3BA7E1;
@@ -109,17 +125,20 @@ a{
     padding: 10px 20px;
     box-shadow: 0px 5px 0px #1D64A6; */
 } 
-
-@media screen and (min-width:800px) {
-    body {
-    font-size:100%;
-    /* ampliamos los textos si mide más de 800px */
-    }
+@media screen and (max-width: 800px) {
+    #Contenido {
+        width:100%;
     }
 
-@media screen and (min-width:1200px) {
-        body {
-        font-size:120%;
-        /* ampliamos más aún los textos si mide más de 1200px */
-        }
-        }
+    aside{
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    #Contenedor {
+        width: 100%;
+    }
+}
+
